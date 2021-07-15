@@ -1,8 +1,5 @@
 import time
 from typing import List
-
-import matplotlib
-matplotlib.use('Qt4Agg')
 import matplotlib.pyplot as plt
 
 
@@ -75,7 +72,7 @@ class Visualization:
         self.ax[1][0].plot(tasks_x, tasks_y, color="C0")
         self.ax[1][1].plot(com_x, com_y, color="C0")
 
-        self.fig[1].canvas.update()
+        self.fig[1].canvas.draw()
         self.fig[1].canvas.flush_events()
 
     def _handle_close(self, event) -> None:
