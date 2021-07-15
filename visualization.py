@@ -1,5 +1,8 @@
 import time
 from typing import List
+
+import matplotlib
+matplotlib.use('Qt4Agg')
 import matplotlib.pyplot as plt
 
 
